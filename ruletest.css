@@ -1,0 +1,81 @@
+body {
+    background-image: url('https://www.blackjack.com.au/wp-content/uploads/2024/06/blackjack_rules.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-position: center; 
+    margin: 0; 
+    padding: 0; 
+}
+
+aside {
+    font-family: "Doto", sans-serif;
+    width: 170px;
+    background-color: #242633;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%; 
+}
+
+aside a {
+    color: white; 
+    text-decoration: none;
+}
+
+aside a:hover {
+    text-decoration: underline;
+}
+
+main {
+    margin: 0;
+    margin-left: 200px; 
+    padding: 20px; 
+    color: white;
+}
+
+h1,h2,p {
+    font-family: "Doto", sans-serif;
+}
+
+.bjrule-div {
+  position: relative;
+  width: 800px;
+  height: 3200px;
+  background-color: #2d2242;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 24px;
+  text-align: center;
+  opacity: 0.85;
+  margin-left: 120px;
+  animation: glow-animation 1.5s infinite alternate;
+}
+
+@keyframes glow-animation {
+  0% {
+    box-shadow: 0 0 10px #ebd7b6 0.3, 0 0 20px #ebd7b6 0.4;
+    background-color: #2d2242;
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7),
+      0 0 40px rgba(255, 255, 255, 1);
+    background-color: #423855; /* Lighten background on peak */
+  }
+  100% {
+    box-shadow: 0 0 10px #ebd7b6 0.3, 0 0 20px #ebd7b6 0.4;
+    background-color: #2d2242;
+  }
+}
+
+#goback {
+    font-size: 200%;
+    padding-left: 60px;
+    text-decoration: none;
+}
+

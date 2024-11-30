@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Doto:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+  <div class="login-container">
+    <h1>Welcome to Blackjack</h1>
+    <div id="form-container">
+      <form id="signupForm" style="display: none;" onsubmit="signUp(event)">
+        <h2>Sign Up</h2>
+        <label for="signupUsername">Enter a new username:</label>
+        <input type="text" id="signupUsername" placeholder="Username" required>
+        <label for="signupPassword">Create a password:</label>
+        <input type="password" id="signupPassword" placeholder="Password" required>
+        <button type="submit">Sign Up</button>
+        <p>Already have an account? <a href="#" onclick="logindis()">Log In</a></p>
+      </form>
+
+      <form id="loginForm" onsubmit="logIn(event)">
+        <h2>Log In</h2>
+        <label for="loginUsername">Enter your username:</label>
+        <input type="text" id="loginUsername" placeholder="Username" required>
+        <label for="loginPassword">Enter your password:</label>
+        <input type="password" id="loginPassword" placeholder="Password" required>
+        <button type="submit">Log In</button>
+        <p>New here? <a href="#" onclick="signupdis()">Sign Up</a></p>
+      </form>
+    </div>
+  </div>
+
+  <script src='login.js'></script>
+</body>
+
+</html>

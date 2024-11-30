@@ -1,0 +1,76 @@
+body {
+  background-image: url(https://memeschain.com/wp-content/uploads/2023/04/What-is-the-number-1-Australian-online-casino-Top-real-money-casino-4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+h1 {
+  font-family: "Doto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "ROND" 0;
+  font-size: 120px;
+  color: white;
+  text-shadow: 0 0 20px #ebd7b6, 0 0 30px #ebd7b6, 0 0 40px #ebd7b6, 0 0 8px #2d2242, 0 0 8px #2d2242; 
+  margin-bottom: 20px;
+}
+
+.button {
+  font-family: "Doto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700; /* Updated valid weight */
+  font-style: normal;
+  font-variation-settings: "ROND" 0;
+  width: 200px;
+  padding: 15px;
+  font-size: 20px;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  background-color: #6c4943;
+  opacity: 0.8;
+  transition: background-color 0.3s;
+  margin: 0 10px;
+  box-shadow: 0 -5px 50px #ebd7b6, 0 -5px 10px #ebd7b6, 0 -5px 15px #ebd7b6, 0 5px #999;
+
+}
+.button:hover {background-color: #2d2242}
+.button:active {
+  background-color: #2d2242;
+  box-shadow: 0 -5px 50px #ebd7b6, 0 -5px 10px #ebd7b6, 0px 3px #666;
+  transform: translateY(4px);
+}
+#rule {
+    font-family: "Doto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700; /* Updated valid weight */
+  font-style: normal;
+  font-variation-settings: "ROND" 0;
+    position: fixed;
+    top: 10px;
+    right: 10px;     
+    padding: 7px 10px;
+    background-color: #6c4943; 
+    color: white;            
+    border: none;          
+    border-radius: 5px;
+    opacity: 0.8;
+    transition: background-color 0.3s;
+  margin: 0 3px;
+  box-shadow: 0 -3px 11px #ebd7b6, 0 -3px 13px #ebd7b6, 0 -5px 13px #ebd7b6, 0 1px 1px #999;
+}
+#rule:hover {
+    background-color: #2d2242;
+}

@@ -1,0 +1,334 @@
+body {
+  background-image: url(https://w0.peakpx.com/wallpaper/338/812/HD-wallpaper-gambling-table-casino-dice-chips-bokeh-playing-cards-casino-concepts.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+}
+
+.glowing-div {
+  position: relative;
+  width: 900px;
+  height: 600px;
+  background-color: #2d2242;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-family: "Doto", sans-serif;
+  font-size: 24px;
+  text-align: center;
+  opacity: 0.85;
+  animation: glow-animation 1.5s infinite alternate;
+}
+
+/* Keyframes for Glowing Animation */
+@keyframes glow-animation {
+  0% {
+    box-shadow: 0 0 10px #ebd7b6 0.3, 0 0 20px #ebd7b6 0.4;
+    background-color: #2d2242;
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7),
+      0 0 40px rgba(255, 255, 255, 1);
+    background-color: #423855; /* Lighten background on peak */
+  }
+  100% {
+    box-shadow: 0 0 10px #ebd7b6 0.3, 0 0 20px #ebd7b6 0.4;
+    background-color: #2d2242;
+  }
+}
+
+h1,
+p {
+  margin-left: 40px;
+  margin-right: 40px;
+  font-family: "Doto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "ROND" 0;
+  color: white;
+  margin-bottom: 20px;
+}
+#status {
+  font-size: 22px;
+  color: #2d2242;
+  z-index: 20;
+  margin-top: -70px;
+}
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  background-color: #e04237;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  background-color: #b3352c;
+}
+
+.start-btn {
+  font-family: "Doto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "ROND" 0;
+  width: 200px;
+  padding: 15px;
+  font-size: 20px;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  background-color: #598b66;
+  opacity: 0.8;
+  transition: background-color 0.3s;
+  margin: 0 10px;
+  box-shadow: 0 -5px 50px #cddcd1, 0 -5px 10px #cddcd1, 0 -5px 15px #cddcd1,
+    0 5px #999;
+  margin-top: -90px;
+}
+.start-btn:hover {
+  background-color: #476f52;
+}
+.start-btn:active {
+  background-color: #476f52;
+  box-shadow: 0 -5px 50px #cddcd1, 0 -5px 10px #cddcd1, 0px 3px #666;
+  transform: translateY(4px);
+}
+
+.character {
+  font-family: "Doto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "ROND" 0;
+  width: 200px;
+  padding: 15px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  background-color: #2d2242;
+  margin: 0 10px;
+}
+
+#dealer {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+}
+#player2 {
+  position: absolute;
+  bottom: 25%;
+  left: 5%;
+}
+#player1 {
+  position: absolute;
+  bottom: 5%;
+}
+
+#player3 {
+  position: absolute;
+  bottom: 25%;
+  right: 5%;
+}
+
+.betBox {
+  font-family: "Doto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "ROND" 0;
+  width: 55px;
+  height: 55px;
+  padding: 15px;
+  font-size: 28px;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  background-color: #ebd7b6;
+}
+#betbox2 {
+  position: absolute;
+  bottom: 35%;
+  left: 10%;
+}
+#betbox1 {
+  position: absolute;
+  bottom: 15%;
+}
+
+#betbox3 {
+  position: absolute;
+  bottom: 35%;
+  right: 10%;
+}
+
+.chip {
+  margin-top: -90px;
+  font-family: "Doto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "ROND" 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  border: none;
+  background-color: #ebd7b6;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  position:relative;
+  z-index: 9999;
+}
+
+#ten {
+  background-color: #ff456f;
+}
+#fifty {
+  background-color: #4677c8;
+}
+#hundred {
+  background-color: #049d8c;
+}
+#fivehundreds {
+  background-color: #494753;
+}
+
+#ten:hover {
+  background-color: #b3304e;
+  transform: scale(1.1);
+}
+#fifty:hover {
+  background-color: #31538c;
+  transform: scale(1.1);
+}
+#hundred:hover {
+  background-color: #036e62;
+  transform: scale(1.1);
+}
+#fivehundreds:hover {
+  background-color: #33323a;
+  transform: scale(1.1);
+}
+
+.cardsArea {
+  font-family: "Doto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "ROND" 0;
+  position: absolute;
+  width: 300px; /* Adjust range width */
+  height: 170px; /* Adjust range height */
+  margin: 20px auto;
+  top: 10%;
+  border: none;
+}
+#dealerCards {
+  top: 100px; /* Position at the top */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#player1Card {
+  top: 370px; /* Position at the bottom */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#player2Card {
+  top: 40%;
+  left: 50px; /* Position on the left */
+  transform: translateY(-50%);
+}
+
+#player3Card {
+  top: 40%;
+  right: 50px; /* Position on the right */
+  transform: translateY(-50%);
+}
+
+.card {
+  position: absolute;
+  width: 120px;
+  height: 168px;
+  background-color: #f4f4f4;
+  border: 1px solid #000;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  line-height: 75px;
+  font-size: 14px;
+  transition: transform 0.2s, z-index 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.2); /* Enlarge card on hover */
+  z-index: 10; /* Bring hovered card to front */
+  background-color: #e1dcdb; /* Highlight color */
+}
+
+.card-suit {
+  font-size: 18px;
+  color: red; /* Use red for hearts and diamonds */
+}
+
+/* Rank styling */
+.card-rank {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.loader {
+  border: 16px solid #f3f3f5; /* Light grey */
+  border-top: 16px solid #9eb4de; /* Blue */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite;
+  margin-top: -70px;
+
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#goback {
+    font-size: 200%;
+    padding-left: 40px;
+    padding-top: 10px;
+    text-decoration: none;
+    position: fixed; 
+    top: 0;         
+    left: 0;         
+}
+
+

@@ -1,0 +1,93 @@
+body {
+  font-family: "Doto", sans-serif;
+  background-image: url('https://www.mplgames.com/blog/wp-content/uploads/2022/06/how-to-play-blackjack.png');
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-position: center; 
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.login-container {
+  text-align: center;
+  background-color: #2d2242;
+  opacity:0.95;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 400px;
+  animation: glow-animation 1.5s infinite alternate;
+}
+
+@keyframes glow-animation {
+  0% {
+    box-shadow: 0 0 10px #ebd7b6 0.3, 0 0 20px #ebd7b6 0.4;
+    background-color: #2d2242;
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7),
+      0 0 40px rgba(255, 255, 255, 1);
+    background-color: #423855; /* Lighten background on peak */
+  }
+  100% {
+    box-shadow: 0 0 10px #ebd7b6 0.3, 0 0 20px #ebd7b6 0.4;
+    background-color: #2d2242;
+  }
+}
+
+form {
+  margin-top: 20px;
+}
+
+input {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #555;
+  border-radius: 5px;
+  width: 80%;
+}
+
+button {
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+input {
+  display: block; /* Ensure the input spans the full width */
+  width: 100%; /* Adjust width as needed */
+  margin: 10px 0; /* Add spacing between fields */
+  padding: 10px; /* Improve input appearance */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+label {
+  display: block; /* Align label above the input */
+  margin-bottom: 5px; /* Add spacing between label and input */
+}
+
+input,button{
+  font-family: "Doto", sans-serif;
+}

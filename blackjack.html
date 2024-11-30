@@ -1,0 +1,79 @@
+<!Doctype html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="bjcss.css" rel="stylesheet" type="text/css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Doto:wght@100..900&display=swap" rel="stylesheet">
+
+  <title>Casino</title>
+</head>
+
+<body>
+  <a href="index.html" id='goback'>⬅️</a>
+  <audio id="bgMusic" loop>
+    <source src='jazz.mp3' type='audio/mp3'>
+  </audio>
+
+  <div class="glowing-div" id="welcomeDiv">
+    <button class="close-btn" onclick="closeDiv()">X</button>
+    <h1> Welcome to Blackjack</h1>
+    <p>In Blackjack, players aim to have a hand value as close to 21 as possible without exceeding it, competing against the dealer rather than other players. Number cards are worth their face value, face cards (Jack, Queen, King) are worth 10, and Aces can count as 1 or 11, depending on the player's choice. At the start, each player and the dealer receive two cards; players' cards are dealt face up, while the dealer has one card face down (the "hole" card). Players can "hit" (take another card) or "stand" (keep their current hand) to improve their total. If a player's hand exceeds 21, they "bust" and lose automatically. The dealer must hit until their hand reaches at least 17. A "Blackjack" (Ace + 10-value card on the initial deal) is the strongest hand, automatically winning unless the dealer also has a Blackjack, resulting in a tie.</p>
+  </div>
+  <div id="start">
+    <button id="startBtn" class="start-btn" onclick="startGambling()" style="display: none;">Start Gambling</button>
+  </div>
+
+  <div id="dealer" class="character" style="display: none;">Dealer</div>
+  <div id="player2" class="character" style="display: none;">Player2</div>
+  <div id="player3" class="character" style="display: none;">Player3</div>
+  <div id="player1" class="character" style="display: none;">Player1</div>
+  <div id="dealer" class="character" style="display: none;">Dealer</div>
+
+  <div id="betbox1" class="betBox" onclick='pp()'style="display: none;"></div>
+  <div id="betbox2" class="betBox" style="display: none;"></div>
+  <div id="betbox3" class="betBox" style="display: none;"></div>
+
+  <button id="betButton" class="start-btn" onclick="placeBet()" style='display: none;'>Place Bet</button>
+  <div id="chipContainer" style="display: none;">
+    <button class="chip" id='ten' onclick="setBet(10)">10</button>
+    <button class="chip" id='fifty' onclick="setBet(50)">50</button>
+    <button class="chip" id='hundred' onclick="setBet(100)">100</button>
+    <button class="chip" id='fivehundreds' onclick="setBet(500)">500</button>
+  </div>
+
+  <div id="choices" style="display: none;">
+    <button class="chip" id='hit' onclick="hit()">Hit</button>
+    <button class="chip" id='double' onclick="double()">Double</button>
+    <button class="chip" id='stand' onclick="stand()">Stand</button>
+  </div>
+  
+  <button id="dealCardsBtn" class='start-btn' onclick="firstRound()" style='display: none;'>Deal Cards</button>
+
+  <div id="dealerCards" class='cardsArea' style='display: none;'></div>
+  <div id="player1Card" class='cardsArea' style='display: none;'></div>
+  <div id="player2Card" class='cardsArea' style='display: none;'></div>
+  <div id="player3Card" class='cardsArea' style='display: none;'></div>
+  
+  <button id="ddBtn" class='start-btn' onclick="doubleDown()" style='display: none;'>Double Down</button>
+  <button id="ddnoBtn" class='start-btn' onclick="nodd()" style='display: none;'>Cancel</button>
+  
+  <button id="dealOneBtn" class='start-btn' onclick="dealerTurn()" style='display: none;'>Deal Cards</button>
+
+  <button id="inBtn" class='start-btn' onclick="insurance()" style='display: none;'>Insurance</button>
+  <button id="innoBtn" class='start-btn' onclick="noin()" style='display: none;'>Cancel</button>
+
+  <div id="load" class="loader" style='display: none;'></div>
+  <p id="status" style='display: none;'></p>
+
+  <button id="playerChoiceBtn" class='start-btn' onclick="playerChoice()" style='display: none;'>Players' Turn</button>
+
+
+<script src="bjjs.js"></script>
+</body>
+
+</html>
